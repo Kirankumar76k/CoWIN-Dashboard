@@ -1,0 +1,33 @@
+/* Write your CSS here */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #1c1c2b;
+  font-family: roboto;
+}
+.responsive-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 20px;
+  max-width: 1000px;
+}
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  height: 40px;
+  margin-right: 10px;
+}
+.icon-title {
+  font-size: 22px;
+  color: #2cc6c6;
+  font-weight: 600;
+}
+.heading {
+  font-size: 26px;
+  color: white;
+  font-weight: 500;
+}
