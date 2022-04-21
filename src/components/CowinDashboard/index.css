@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  background-color: #1c1c2b;
+  background-color: #161625;
   font-family: roboto;
 }
 .responsive-container {
@@ -30,4 +30,29 @@
   font-size: 26px;
   color: white;
   font-weight: 500;
+}
+.card-container {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1c2b;
+  margin-bottom: 25px;
+}
+.card-head {
+  font-size: 24px;
+  color: #6c757d;
+}
+.failure-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.failure-view {
+  height: 400px;
+}
+.failure-head {
+  font-size: 28px;
+  color: white;
+  line-height: 2.5;
 }

@@ -54,6 +54,17 @@ class CowinDashboard extends Component {
     }
   }
 
+  renderFailureView = () => (
+    <div className="failure-container">
+      <img
+        src="https://assets.ccbp.in/frontend/react-js/api-failure-view.png"
+        alt="failure view"
+        className="failure-view"
+      />
+      <h1 className="failure-head">Something went wrong</h1>
+    </div>
+  )
+
   renderSuccessView = () => {
     const {VaccineDataList} = this.state
     return (
@@ -61,10 +72,11 @@ class CowinDashboard extends Component {
         <VaccinationCoverage
           vaccinationCoverage={VaccineDataList.last7DaysVaccination}
         />
-        <VaccinationByAge vaccinationByAge={VaccineDataList.vaccinationByAge} />
+
         <VaccinationByGender
           vaccinationByGender={VaccineDataList.vaccinationByGender}
         />
+        <VaccinationByAge vaccinationByAge={VaccineDataList.vaccinationByAge} />
       </>
     )
   }
@@ -102,7 +114,7 @@ class CowinDashboard extends Component {
             <p className="icon-title">Co-WIN</p>
           </div>
           <h1 className="heading">CoWIN Vaccination in India</h1>
-          {this.renderApiStatusView}
+          {this.renderApiStatusView()}
         </div>
       </div>
     )
